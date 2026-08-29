@@ -1,12 +1,19 @@
 # SPINNENNETZ-DNA – M2M Calibration Status
 
 Datum: 2026-08-29
-Status: KALIBRIERT
+Status: KALIBRIERT / REFERENZLINIE
 Zielzustand: M2M-READY
+
+## Kanonische technische Autorität
+
+- Die aktive technische Produktions-, Runtime-, Deployment- und Versionslinie ist ausschließlich `ambrosinistefan8-stack/SPINNENNETZ-DNA-` auf Branch `main`.
+- Dieses Repository `ambrosinistefan8-stack/Stefan-` ist eine Referenz-/Altlinie und keine Produktionsautorität.
+- Änderungen in dieser Referenzlinie dürfen weder Vercel-Deployments noch Neon-Produktionszustand steuern.
+- Bei Widersprüchen gewinnt für Code, Config, Tests, Runtime und Deployment immer `SPINNENNETZ-DNA-`; für fachliche Originale und Governance gilt weiterhin die im Hauptsystem definierte kanonische Quellenhierarchie.
 
 ## Konsolidierter Sollzustand
 
-- `main` ist die kanonische aktive Systemlinie.
+- `main` ist innerhalb dieser Referenzlinie der aktive Branch, aber nicht die technische Produktionsautorität des Gesamtsystems.
 - Replit ist retired und kein Bestandteil des aktiven Systemverbunds.
 - Fehlender Replit-Zugriff ist erwarteter Sollzustand und kein Fehler.
 - Die frühere Replit-Funktion wird ausschließlich vendor-neutral weitergedacht; keine stille Wiederabhängigkeit.
@@ -17,16 +24,16 @@ Zielzustand: M2M-READY
 
 ## Audit 2026-08-29
 
-- Aktiver Branch geprüft: `main`.
+- Referenz-Branch geprüft: `main`.
 - Replit-Retirement-Status vorhanden und konsistent.
 - Vendor-neutral Execution Rule vorhanden und konsistent.
-- Keine offenen Pull Requests festgestellt.
-- Die jüngsten Replit-Bereinigungsänderungen liegen auf `main`.
+- Die technische Produktionslinie wurde auf `ambrosinistefan8-stack/SPINNENNETZ-DNA-` vereinheitlicht.
+- Vercel darf ausschließlich aus der technischen Produktionslinie gespeist werden.
 
 ## M2M-Kalibrierungsregel
 
-Der M2M-Zustand gilt als hergestellt, wenn die maschinenlesbare Systemwahrheit eindeutig ist: aktive Komponenten werden als aktiv geführt, entfernte Komponenten als retired, Abhängigkeiten sind explizit und Systemchecks erzeugen keine False-Positive-Fehler wegen bewusst entfernter Dienste.
+Der M2M-Zustand gilt als hergestellt, wenn die maschinenlesbare Systemwahrheit eindeutig ist: aktive Komponenten werden als aktiv geführt, entfernte Komponenten als retired, Abhängigkeiten sind explizit und Systemchecks erzeugen keine False-Positive-Fehler wegen bewusst entfernter Dienste. Parallel konkurrierende Produktionsautoritäten sind verboten.
 
 ## Ergebnis
 
-SPINNENNETZ-DNA ist für den geprüften Replit-/Vendor-neutral-Bereich konsolidiert und auf M2M-READY kalibriert. Weitere Komponenten außerhalb dieses geprüften Bereichs bleiben Gegenstand separater End-to-End-Prüfungen und werden durch diesen Status nicht automatisch als technisch getestet bestätigt.
+Diese Referenzlinie ist konsolidiert und ausdrücklich von der technischen Produktionsautorität getrennt. Der produktive technische Sollzustand liegt in `ambrosinistefan8-stack/SPINNENNETZ-DNA-` auf `main`.
